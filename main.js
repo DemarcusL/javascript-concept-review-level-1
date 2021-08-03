@@ -32,7 +32,28 @@ function ex1(x1, x2) {
 
 }
 
-//ex 2:
+//ex 2:write a function that writes in console multi table ( 1 to 10)
+function ex2() {
+    // console.log(`Alternate approach to using nested loops`);
+    //longer approach to using nested loops and arrays
+    //loop through each number for multiplication
+    for (let index = 1; index <= 10; index++) {
+        // console.log(` outer loop is ${index}`);
+        //need nested loop to do products for 1 - 10
+        //now do an inner loop for 
+        let productList = []; //create a new array to hold the product
+        for (let pindex = 1; pindex <= 10; pindex++) {
+        //    console.log(`Inner loop ${pindex}`);
+            productList[pindex-1] = index * pindex;
+        }
+
+    }
+        // for each product, add row to table
+        let multiTableRow = `${index} ${index * 1} ${index * 2} ${index * 3} ${index * 4} ${index * 5} ${index * 6}`;
+        console.log(multiTableRow);
+}
+
+
 
 //ex 3: 
 // is says we need a function that takes
@@ -74,4 +95,5 @@ console.log(resultsOfMultiples);
 
 //POE
 // ex1();
+// ex2();
 main();
